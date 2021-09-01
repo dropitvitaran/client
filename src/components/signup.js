@@ -9,7 +9,7 @@ function SignUp(){
         verifypassword:""
     })
 
-    function change(event, para){
+    function change(event,para){
         setUserInfo((previousValue)=>{
             return{
                 ...previousValue,
