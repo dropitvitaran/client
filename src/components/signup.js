@@ -6,7 +6,6 @@ function SignUp(){
     const [userInfo, setUserInfo]=useState({
         email: "",
         password: "",
-        verifypassword:""
     })
 
     function change(event,para){
@@ -17,6 +16,20 @@ function SignUp(){
             }
         })
     }
+    
+    const [isError, setIsError]=useState("");
+
+    const checkValidation = (event) => {
+        if(userInfo.password != event.target.value){
+            setIsError("Password didn't match")
+        }else{
+            setIsError("")
+        }
+        if(event.target.value ==""){
+            setIsError("")
+        }
+    }
+
 
     return(
         <div className="signupPage">
@@ -25,21 +38,44 @@ function SignUp(){
                 <div>
                     <label className="email">Email</label>
                     <br/>
-                    <input id="email" v-model="email" text="email" placeholder="Your email address" value={userInfo.email} 
-                    onChange={(event)=>{change(event,"email")}}
-                    >
+                    <input id="email" 
+                        v-model="email" 
+                        text="email" 
+                        placeholder="Your email address" 
+                        value={userInfo.email} 
+                        onChange={(event)=>{change(event,"email")}}
+                        >
                     </input>
                 </div>
                 <div>
                     <label className="password">Password</label>
                     <br/>
-                    <input id="password" v-model="password" type="password" placeholder="Your Password" value={userInfo.password} onChange={(event)=>{change(event,"password")}}></input>
+                    <input id="password"
+                        v-model="password" 
+                        type="password" 
+                        placeholder="Your Password" 
+                        value={userInfo.password} 
+                        onChange={(event)=>{change(event,"password")}}
+                        >
+                    </input>
                 </div>
                 <div>
-                    <label className="verifypassword">Confirm Password</label>
+                    <label className="verifypassword">
+                        Confirm Password
+                    </label>
                     <br/>
-                    <input id="password" v-model="password" type="password" placeholder="Confirm Your Password" value={userInfo.verifypassword} onChange={(event)=>{change(event,"verifypassword")}}></input>
+                    <input id="verifyPassword" 
+                        v-model="password" 
+                        type="password" 
+                        placeholder="Confirm Your Password"
+                        onChange={(event)=>{checkValidation(event)}}
+                     >
+                    </input>
+                    <div className="verifyPass">
+                        {isError}
+                    </div>
                 </div>
+                
                 <div className="signUp">
                     <button className="signupBtn">
                         SignUp
