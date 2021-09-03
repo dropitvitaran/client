@@ -22,7 +22,7 @@ body {
 .loginContainer div {
   margin-left: 50px;
 }
-input {
+.input {
   width: 300px;
   height: 40px;
   margin-bottom: 10px;
@@ -33,7 +33,7 @@ input {
   border-radius: 3px;
   background-color: #e4e8eb;
 }
-input:hover {
+.input:hover {
   box-shadow: 2px 2px 4px #6b7280;
 }
 #password {

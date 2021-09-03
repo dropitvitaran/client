@@ -8,12 +8,12 @@ function Login(){
                 <div>
                     <label className="email">Email</label>
                     <br/>
-                    <input id="email" v-model="email" type="email" placeholder="Your email address"></input>
+                    <input className="input" id="email" v-model="email" type="email" placeholder="Your email address"></input>
                 </div>
                 <div>
                     <label className="password">Password</label>
                     <br/>
-                    <input id="password" v-model="password" type="password" placeholder="Your Password"></input>
+                    <input className="input" id="password" v-model="password" type="password" placeholder="Your Password"></input>
                 </div>
                 <div className="forgetPassword">
                 <a href="#">Forget Password?</a>

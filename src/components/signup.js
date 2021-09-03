@@ -38,7 +38,8 @@ function SignUp(){
                 <div>
                     <label className="email">Email</label>
                     <br/>
-                    <input id="email" 
+                    <input className="input"
+                        id="email" 
                         v-model="email" 
                         text="email" 
                         placeholder="Your email address" 
@@ -50,7 +51,8 @@ function SignUp(){
                 <div>
                     <label className="password">Password</label>
                     <br/>
-                    <input id="password"
+                    <input className="input"
+                        id="password"
                         v-model="password" 
                         type="password" 
                         placeholder="Your Password" 
@@ -64,7 +66,8 @@ function SignUp(){
                         Confirm Password
                     </label>
                     <br/>
-                    <input id="verifyPassword" 
+                    <input className="input"
+                        id="verifyPassword" 
                         v-model="password" 
                         type="password" 
                         placeholder="Confirm Your Password"

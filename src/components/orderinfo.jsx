@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
+import "./orderinfo.css"
 function OrderInfo(){
     const [pickup,setpickup]=useState(false)
     const [orderdetails,setorderdetails]=useState({
@@ -34,57 +35,62 @@ if(position){
     
     
     return(
-<div>
-<button onClick={(event)=>getPickUp(event)}>Pick Up Delivery</button>
-<button onClick={()=>pickup?setpickup(false):setpickup(true)}>Enter Manually</button>
-
-<div>
-<div>
-{pickup?<textarea />:null}
-</div>
-
-<input placeholder="mobile number" />
-<input placeholder="Landmark" />
-</div>
-<button>Delivery Address</button>
-<div>
-<input placeholder="mobile number" />
-<input placeholder="Landmark" />
-</div>
-<select style={{width:"200px"}}>
-<option>What are you sending</option>
-<option>A</option>
-<option>B</option>
-<option>C</option>
-</select>
-<div>
-<select>
-    <option>Weight Category</option>
-    <option>A</option>
-    <option>B</option>
-    <option>C</option>
-</select>
-<select>
-<option>Size Category</option>
-    <option>A</option>
-    <option>B</option>
-    <option>C</option>
-</select>
-</div>
-<div>
-<select>
-<option>Payment Method</option>
-    <option>A</option>
-    <option>B</option>
-    <option>C</option>
-</select>
-<select>
-<option>Opt Bidding</option>
-    <option>Yes</option>
-    <option>No</option>
-    
-</select>
-</div>
+<div className="orderbox">
+    <h1>Pick n Drop</h1>
+    <button className="delivery">Pickup Address</button>
+    {/* <button className="mapPickup" onClick={(event)=>getPickUp(event)}>Pick Up Delivery</button>
+    <button className="manualPickup" onClick={()=>pickup?setpickup(false):setpickup(true)}>Enter Manually</button> */}
+    <div>
+    <div>
+        {pickup?<textarea />:null}
+    </div>
+        <input className="mobile" placeholder="Mobile number"/>
+        <input className="landmark" placeholder="Landmark"/>
+    </div>
+    <div>
+    <button className="delivery">Delivery Address</button>
+    </div>
+    <div>
+        <input className="mobile" placeholder="Mobile number" />
+        <input className="landmark" placeholder="Landmark" />
+    </div>
+    <select className="sending">
+        <option>What are you sending</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <div>
+        <select className="left">
+            <option>Weight Category</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <select className="right">
+        <option>Size Category</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+    </div>
+    <div>
+        <select className="left">
+        <option>Payment Method</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <select className="right">
+        <option>Opt Bidding</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+    </div>
+    <div>
+        <input type="radio" name="" id="" />
+        <button className="placeOrder">Place Order</button>
+    </div>
 </div>
     )
 }
