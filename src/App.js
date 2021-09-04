@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from "./components/navbar"
 import MyOrders from "./components/myorders"
 import OrderInfo from './components/orderinfo';
+import Home from './components/home'
 import Login from './components/login'
 import SignUp from './components/signup'
 function App() {
@@ -37,6 +38,7 @@ function App() {
 
       <Router>
         <Route exact path="/myorders" component={MyOrders} />
+        <Route exact path="/home" component={Home}/>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/orderinfo" component={OrderInfo}/>
