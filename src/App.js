@@ -8,7 +8,11 @@ import OrderInfo from './components/orderinfo';
 import Home from './components/home'
 import Login from './components/login'
 import SignUp from './components/signup'
+<<<<<<< HEAD
+import onMyWay from './components/onMyWay';
+=======
 import Map from './components/map';
+>>>>>>> 8211000eb52713ae905d0a4db551bf6e83e87d17
 function App() {
 
   const [user, setuser] = useState("client")
@@ -25,8 +29,8 @@ function App() {
     <div>
       <Navbar user={user} />
       <div className="toggle">
-        <button value="client" onClick={(event) => changeuser(event)} className="toggle_btn act">Client</button>
-        <button value="dropper" onClick={(event) => changeuser(event)} className="toggle_btn">Dropper</button>
+        <button value="client" onClick={(event) => changeuser(event)} className="toggle_btn toggle_btn_left act">Client</button>
+        <button value="dropper" onClick={(event) => changeuser(event)} className="toggle_btn toggle_btn_right">Dropper</button>
       </div>
       {/* <div className="recent_orders">
         <div className="top">
@@ -43,7 +47,12 @@ function App() {
         <Route exact path="/login" component={Login}/>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/orderinfo" component={OrderInfo}/>
+<<<<<<< HEAD
+
+ 
+=======
         <Route exact path="/map" component={Map}/>
+>>>>>>> 8211000eb52713ae905d0a4db551bf6e83e87d17
         {/* <MyOrders />
         </Route> */}
 

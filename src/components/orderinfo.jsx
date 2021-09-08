@@ -88,7 +88,6 @@ if(position){
         </select>
     </div>
     <div>
-        <input type="radio" name="" id="" />
         <button className="placeOrder">Place Order</button>
     </div>
 </div>
