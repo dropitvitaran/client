@@ -8,7 +8,7 @@ function SignUp(){
         password: "",
     })
 
-    function change(event, para){
+    function change(event,para){
         setUserInfo((previousValue)=>{
             return{
                 ...previousValue,
