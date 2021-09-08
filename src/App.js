@@ -8,6 +8,7 @@ import OrderInfo from './components/orderinfo';
 import Home from './components/home'
 import Login from './components/login'
 import SignUp from './components/signup'
+import onMyWay from './components/onMyWay';
 function App() {
 
   const [user, setuser] = useState("client")
@@ -24,8 +25,8 @@ function App() {
     <div>
       <Navbar user={user} />
       <div className="toggle">
-        <button value="client" onClick={(event) => changeuser(event)} className="toggle_btn act">Client</button>
-        <button value="dropper" onClick={(event) => changeuser(event)} className="toggle_btn">Dropper</button>
+        <button value="client" onClick={(event) => changeuser(event)} className="toggle_btn toggle_btn_left act">Client</button>
+        <button value="dropper" onClick={(event) => changeuser(event)} className="toggle_btn toggle_btn_right">Dropper</button>
       </div>
       {/* <div className="recent_orders">
         <div className="top">
@@ -42,6 +43,7 @@ function App() {
         <Route exact path="/login" component={Login}/>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/orderinfo" component={OrderInfo}/>
+        <Route exact path="/on-my-way" component={onMyWay}/>
  
         {/* <MyOrders />
         </Route> */}

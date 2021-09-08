@@ -104,8 +104,8 @@ body {
 }
 
 .toggle{
-  margin-left: 1300px;
-  margin-top: 15px;
+  float:right;
+  margin:20px 50px;
 }
 
 .toggle_btn{
@@ -114,8 +114,18 @@ body {
   height:30px;
   background: white;
   cursor: pointer;
+  border:0.7px solid;
 }
-
+.toggle_btn_left{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.toggle_btn_right{
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
 .act{
-background-color:rgb(66, 123, 228) ;
+background-color:#374155;
+color: #fff;
+border: none;
 }
