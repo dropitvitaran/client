@@ -72,9 +72,15 @@ map.current.on("load",()=>{
     trackUserLocation: true,
     showUserHeading: true
     }));
-})
+},[])
 
 map.current.addControl(nav, 'bottom-right');
+// map.current.addControl(
+//   new MapboxDirections({
+//   accessToken: mapboxgl.accessToken
+//   }),
+//   'top-left'
+//   );
 // map.current.addControl(directions,"top-left")
 },[])
 
