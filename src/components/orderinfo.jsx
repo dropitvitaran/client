@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
 import "./orderinfo.css"
+import Map from "./map"
 function OrderInfo(){
     const [pickup,setpickup]=useState(false)
     const [orderdetails,setorderdetails]=useState({
 
     })
+
+    const [accesslocation,setaccesslocation]=useState(false);
     
  
 function getPickUp(event){
@@ -37,7 +40,10 @@ if(position){
     return(
 <div className="orderbox">
     <h1>Pick n Drop</h1>
-    <button className="delivery">Pickup Address</button>
+    <button onClick={()=>setaccesslocation(accesslocation?false:true)} className="delivery">Pickup Address</button>
+    {accesslocation?
+        <Map />
+   :false}
     {/* <button className="mapPickup" onClick={(event)=>getPickUp(event)}>Pick Up Delivery</button>
     <button className="manualPickup" onClick={()=>pickup?setpickup(false):setpickup(true)}>Enter Manually</button> */}
     <div>
