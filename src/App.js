@@ -10,6 +10,7 @@ import Login from './components/login'
 import SignUp from './components/signup'
 import Map from './components/map';
 import onMyWay from './components/onMyWay';
+
 function App() {
 
   const [user, setuser] = useState("client")
@@ -44,7 +45,7 @@ function App() {
         <Route exact path="/login" component={Login}/>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/orderinfo" component={OrderInfo}/>
-        <Route exact path="/on-my-way" component={onMyWay}/>
+
         <Route exact path="/map" component={Map}/>
         {/* <MyOrders />
         </Route> */}
