@@ -8,11 +8,8 @@ import OrderInfo from './components/orderinfo';
 import Home from './components/home'
 import Login from './components/login'
 import SignUp from './components/signup'
-<<<<<<< HEAD
-import onMyWay from './components/onMyWay';
-=======
 import Map from './components/map';
->>>>>>> 8211000eb52713ae905d0a4db551bf6e83e87d17
+import onMyWay from './components/onMyWay';
 function App() {
 
   const [user, setuser] = useState("client")
@@ -47,12 +44,8 @@ function App() {
         <Route exact path="/login" component={Login}/>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/orderinfo" component={OrderInfo}/>
-<<<<<<< HEAD
-
- 
-=======
+        <Route exact path="/on-my-way" component={onMyWay}/>
         <Route exact path="/map" component={Map}/>
->>>>>>> 8211000eb52713ae905d0a4db551bf6e83e87d17
         {/* <MyOrders />
         </Route> */}
 

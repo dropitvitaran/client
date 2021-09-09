@@ -8,7 +8,7 @@ function onMyWay(){
             <div>
                 <h1>Select Route</h1>
             <select className="onMyWayFrom">
-                <option>From </option><ArrowDropDownIcon/>
+                <option>From </option>
             </select>
             <div className="arrow"><ArrowDropDownIcon/></div>
             
