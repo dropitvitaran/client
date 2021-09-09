@@ -51,7 +51,7 @@ function App() {
 
  
         <Route exact path="/map" component={Map}/>
-
+        <Route exact path="/on-my-way" component={onMyWay} />
         {/* <MyOrders />
         </Route> */}
 
