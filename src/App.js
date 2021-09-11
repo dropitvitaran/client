@@ -45,12 +45,8 @@ function App() {
         <Route exact path="/login" component={Login}/>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/orderinfo" component={OrderInfo}/>
-
         <Route exact path="/map" component={Map}/>
-<<<<<<< HEAD
-=======
         <Route exact path="/on-my-way" component={onMyWay} />
->>>>>>> eaaa41f1a93bc70f4f48804ea88a7f931bb5f902
         {/* <MyOrders />
         </Route> */}
 

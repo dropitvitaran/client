@@ -10,14 +10,15 @@ function onMyWay(){
             <select className="onMyWayFrom">
                 <option>From </option>
             </select>
-            <div className="arrow"><ArrowDropDownIcon/></div>
+            {/* <div className="arrow"><ArrowDropDownIcon/></div> */}
             
             </div>
             <div>
             <select  className="onMyWayTo">
-                <option>To</option>
+                <option>To<i className="fa fa-caret-down arrow"></i></option>
             </select>
-            <div className="arrow"><ArrowDropDownIcon/></div>
+            
+            {/* <div className="arrow"><ArrowDropDownIcon/></div> */}
             </div>
             <div>
             <button className="onMyWayViewMap"> View on Map</button>
