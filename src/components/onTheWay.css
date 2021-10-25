@@ -1,0 +1,46 @@
+.onTheWay-box{
+    border: 1px solid #687280;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #9ca3af;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+    margin: 80px auto 25px auto;
+    width: 750px;
+    height: 550px;
+}
+.onTheWay-map{
+    margin: 10px;
+}
+.onTheWay-info{
+    margin: 0;
+}
+.onTheWay-from-to{
+    margin: 0;
+}
+.carry{
+    margin: 0;
+}
+.onTheWay-time{
+    margin: 0;
+}
+.onTheWay-time .time{
+    margin: 0;
+}
+.onTheWay-accept-decline{
+    margin: 0;
+}
+.onTheWay-accept-decline .accept{
+    margin: 0;
+    /* #64ec85 */
+}
+.onTheWay-accept-decline .decline{
+    margin: 0;
+}
+.onTheWay-accept-decline .details{
+    width: 100px;
+    height: 35px;
+    border: none;
+
+}
+
+

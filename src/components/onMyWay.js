@@ -15,9 +15,10 @@ function onMyWay(){
             </div>
             <div>
             <select  className="onMyWayTo">
-                <option>To<i className="fa fa-caret-down arrow"></i></option>
+                <option>To</option>
+
             </select>
-            
+            <i className="fa fa-caret-down arrow"></i>
             {/* <div className="arrow"><ArrowDropDownIcon/></div> */}
             </div>
             <div>

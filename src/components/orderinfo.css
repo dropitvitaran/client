@@ -110,3 +110,10 @@ body{
 .placeOrder:hover {
 background-color: #374155;
 }
+
+.drop-map{
+    float: right;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}

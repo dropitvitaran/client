@@ -10,6 +10,12 @@ import Login from './components/login'
 import SignUp from './components/signup'
 import Map from './components/map';
 import onMyWay from './components/onMyWay';
+import notification from './components/notification';
+import dashBoard from './components/dashboard';
+import orderDetails from './components/orderDetails';
+import onTheWay from './components/onTheWay';
+import { Order } from './components/orderDetails/order';
+import { PreviousOrder } from './components/previousOrder/previousOrder';
 
 function App() {
 
@@ -41,12 +47,19 @@ function App() {
 
       <Router>
         <Route exact path="/myorders" component={MyOrders} />
-        <Route exact path="/home" component={Home}/>
+        <Route exact path="/" component={Home}/>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/orderinfo" component={OrderInfo}/>
         <Route exact path="/map" component={Map}/>
         <Route exact path="/on-my-way" component={onMyWay} />
+        <Route exact path="/notification" component={notification} />
+        <Route exact path="/dashboard" component={dashBoard} />
+        <Route exact path="/order-details" component={orderDetails}/>
+        <Route exact path="/on-the-way" component={onTheWay} />
+        <Route exact path="/order" component={Order} />
+        <Route exact path="/previous-order" component={PreviousOrder} />
+        
         {/* <MyOrders />
         </Route> */}
 

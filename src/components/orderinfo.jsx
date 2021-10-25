@@ -40,7 +40,7 @@ if(position){
     return(
 <div className="orderbox">
     <h1>Pick n Drop</h1>
-    <button onClick={()=>setaccesslocation(accesslocation?false:true)} className="delivery">Pickup Address</button>
+    <button onClick={()=>setaccesslocation(accesslocation?false:true)} className="delivery">Pickup Address <i class="fas fa-map-marker-alt drop-map"></i></button>
     {accesslocation?
         <Map />
    :false}
@@ -54,7 +54,7 @@ if(position){
         <input className="landmark" placeholder="Landmark"/>
     </div>
     <div>
-    <button className="delivery">Delivery Address</button>
+    <input placeholder="Delivery Address" className="delivery"></input><i className="fas fa-map-marker-alt drop-map"></i>
     </div>
     <div>
         <input className="mobile" placeholder="Mobile number" />
