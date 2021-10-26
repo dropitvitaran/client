@@ -1,0 +1,14 @@
+export { ReactComponent as Dropdown } from "../assets/icons/Dropdown.svg";
+export { ReactComponent as Line } from "../assets/icons/Line.svg";
+export { ReactComponent as ShortLine } from "../assets/icons/ShortLine.svg";
+export { default as Dumble } from "../assets/images/Dumble.png";
+export { default as Clock } from "../assets/images/Clock.png";
+export { default as Tick } from "../assets/images/Tick.png";
+export { ReactComponent as Bike } from "../assets/icons/Bike.svg";
+export { ReactComponent as Car } from "../assets/icons/Car.svg";
+export { ReactComponent as Dollar } from "../assets/icons/Dollar.svg";
+export { ReactComponent as Pick } from "../assets/icons/Pick.svg";
+export { ReactComponent as Time } from "../assets/icons/Time.svg";
+export { ReactComponent as Truck } from "../assets/icons/Truck.svg";
+export { ReactComponent as User } from "../assets/icons/User.svg";
+export { ReactComponent as Star } from "../assets/icons/Star.svg";

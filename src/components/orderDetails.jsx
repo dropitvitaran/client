@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import { Dumble, Line } from '../assets';
 import "./orderDetails.css"
 
 function orderDetails(){
@@ -6,12 +7,19 @@ function orderDetails(){
         <div className="orderdetails-box">
             <div className="orderdetails-from-to">
                 <button className="orderdetails-from">Aya Nagar Phase 5</button>
-                <button className="orderdetails-map"><i class="fas fa-map-marker-alt fa-2x order-map"></i><h4 className="oMap">Map</h4></button>
+                <Line/>
+                <button className="orderdetails-map"><i className="fas fa-map-marker-alt fa-2x order-map"></i><h4 className="oMap">Map</h4></button>
+                <Line/>
                 <button className="orderdetails-to">Rohini Sector 15 Phase 5</button>
             </div>
             <div className="orderDetails-box-info">
                 <div className="orderImages">
-                    <img className="img" src="" alt="Order Image" /><i class="fas fa-chevron-right fa-3x nextimg"></i>
+                    <div>
+                        <img className="img" src={Dumble} alt="Order Image"></img>
+                    </div>
+                    <div className="orderIcon">
+                        <i className="fas fa-chevron-right fa-3x nextimg"></i>
+                    </div>
                 </div>
                 <div className="orderDetails-image-info">
                     <button className="image-info-btn">Weight</button>

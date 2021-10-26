@@ -80,10 +80,12 @@ function SignUp(){
                 </div>
                 
                 <div className="signUp">
+                    <a href="/login">
                     <button className="signupBtn">
                         SignUp
                     </button>
-                    <p>Already have an account? <a href="">LogIn</a></p>
+                    </a>
+                    <p>Already have an account? <a href="/login">LogIn</a></p>
                 </div>
             </div>
         </div>

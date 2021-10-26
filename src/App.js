@@ -16,6 +16,8 @@ import orderDetails from './components/orderDetails';
 import onTheWay from './components/onTheWay';
 import { Order } from './components/orderDetails/order';
 import { PreviousOrder } from './components/previousOrder/previousOrder';
+import DroperPicker from './components/droperPicker';
+import FinalDelivery from './components/finalDelivery/FinalDelivery';
 
 function App() {
 
@@ -52,13 +54,15 @@ function App() {
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/orderinfo" component={OrderInfo}/>
         <Route exact path="/map" component={Map}/>
-        <Route exact path="/on-my-way" component={onMyWay} />
+        <Route exact path="/onmyway" component={onMyWay} />
         <Route exact path="/notification" component={notification} />
         <Route exact path="/dashboard" component={dashBoard} />
         <Route exact path="/order-details" component={orderDetails}/>
-        <Route exact path="/on-the-way" component={onTheWay} />
+        <Route exact path="/ontheway" component={onTheWay} />
         <Route exact path="/order" component={Order} />
         <Route exact path="/previous-order" component={PreviousOrder} />
+        <Route exact path="/droppers" component={DroperPicker} />
+        <Route exact path="/delivery" component={FinalDelivery} />
         
         {/* <MyOrders />
         </Route> */}

@@ -6,41 +6,77 @@
     border-radius: 8px;
     margin: 80px auto 25px auto;
     width: 750px;
+    background-color: #dbdee7;
     height: 550px;
 }
 .onTheWay-map{
     margin: 10px;
+    width: 700px;
+    height: 300px;
 }
 .onTheWay-info{
     margin: 0;
 }
 .onTheWay-from-to{
-    margin: 0;
+    display: flex;
+    margin: 5px 10px;
+}
+.onTheWay-from-to .from, .to{
+    text-align: center;
+    background-color: #eeeeee;
+    width: 90px;
+    height: 60px;
+}
+.onTheWay-from-to .line{
+    margin-top: 16px;
+}
+.onTheWay-from-to-icon{
+    background-color: #c4c4c3;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin-top: 4px;
+    padding-left: 8px;
+}
+.clockImg{
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 50px;
 }
 .carry{
     margin: 0;
 }
 .onTheWay-time{
-    margin: 0;
+    display: flex;
 }
-.onTheWay-time .time{
-    margin: 0;
+.onTheWay-time p{
+    width: 80px;
+    font-size: 13px;
+    background-color: #eeeeee;
+    height: 20px;
+    margin-top: 20px;
+    padding-top: 3px;
 }
 .onTheWay-accept-decline{
-    margin: 0;
+    padding-top: 10px;
+    padding-left: 2px;
+}
+.onTheWay-accept-decline .btn{
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-size: 14px;
+    margin: 5px;
 }
 .onTheWay-accept-decline .accept{
-    margin: 0;
-    /* #64ec85 */
+    background-color: #36f15f;
 }
 .onTheWay-accept-decline .decline{
-    margin: 0;
+    background-color: #f12727;
 }
 .onTheWay-accept-decline .details{
-    width: 100px;
-    height: 35px;
-    border: none;
-
+    background-color: #80d4ee ;
 }
 
 

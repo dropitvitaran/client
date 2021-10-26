@@ -4,9 +4,9 @@
     box-shadow: 2px 2px 5px #9ca3af;
     font-family: 'Open Sans', sans-serif;
     border-radius: 8px;
-    margin: 80px auto;
+    margin: 80px auto 10px auto;
     width: 750px;
-    height: 550px;
+    height: 500px;
 }
 .orderdetails-from-to{
     margin: 30px;
@@ -18,7 +18,7 @@
 .orderdetails-from{
     width: 200px;
     height: 30px;
-    margin: 10px 35px;
+    margin: 10px 1px 10px 15px;
     text-align: center;
     border-radius: 4px;
     background: #fff;
@@ -27,7 +27,7 @@
     height: 65px;
     width: 65px;
     font-size: 15px;
-    margin: 10px 35px;
+    margin: 10px 1px;
     border-radius: 50%;
     background: #c4c4c4;
 }
@@ -38,7 +38,7 @@
 .orderdetails-to{
     width: 200px;
     height: 30px;
-    margin: 10px 40px;
+    margin: 10px 5px 10px 1px;
     text-align: center;
     border-radius: 4px;
     background: #fff;
@@ -51,8 +51,15 @@
     border: 0.3px solid black;
 }
 .img{
-    height: 250px;
-    width: 350px;
+    height: 230px;
+    width: 280px;
+    padding-left: 10px;
+    float: left;
+}
+.orderIcon{
+    width: 40px;
+    margin-top: 90px;
+    margin-left: 10px;
 }
 .orderDetails-box-info{
     width: 750px;
@@ -61,11 +68,13 @@
 .orderImages{
     width: 200px;
     height: 200px;
+    display: flex;
 }
 .orderDetails-image-info{
     width: 400px;
     height: auto;
-    float: right;
+    /* float: right; */
+    margin-left: 149px;
 }
 .image-info-btn{
     border: none;
@@ -86,9 +95,9 @@
     background: #96ec6e;
     height: 40px;
     cursor: pointer;
-    width: 200px;
+    width: 377px;
     border: none;
-    margin: 10px 70px;
+    margin: 10px 23px;
     font-weight: 600;
     font-size:15px ;
     border-radius: 4px;
@@ -97,9 +106,9 @@
     background: #f14f4f;
     height: 40px;
     cursor: pointer;
-    width: 200px;
+    width: 377px;
     border: none;
-    margin: 10px 70px;
+    margin: 10px 23px;
     font-weight: 600;
     font-size:15px ;
     border-radius: 4px;

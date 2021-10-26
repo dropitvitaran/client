@@ -16,11 +16,11 @@ function Login(){
     async function login(){
         console.warn(email,password);
         let item = {email,password}
-        let result = await fetch("api_url",{
+        let result = await fetch("https://drop-it-api.herokuapp.com/create-user",{
             method:'POST',
             headers:{   
                 "Content-Type":"application/json",
-                "Accept":'applocation/json'
+                "Accept":'application/json'
             },
             body:JSON.stringify(item)
         });
@@ -47,14 +47,18 @@ function Login(){
                 <a href="#">Forget Password?</a>
                 </div>
                 <div className="login">
-                    <button className="loginBtn" onClick={login}>
-                        Log in
-                    </button>
+                    <a href="/orderinfo">
+                        <button className="loginBtn" onClick={login}>
+                            Log in
+                        </button>
+                    </a>
                 </div>
                 <div className="signUp">
+                    <a href="/signup">
                     <button className="signupBtn">
                         Sign up
                     </button>
+                    </a>
                 </div>
             </div>
         </div>

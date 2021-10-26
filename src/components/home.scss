@@ -1,0 +1,32 @@
+/* .map-container {
+  height: 600px;
+  margin-left: 100px;
+  top: 10px;
+} */
+.homePageBox{
+  margin: 100px auto;
+  width: 500px;
+
+  .homeContainer{
+    margin-left: 100px;
+    margin-top: 60px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  a button{
+    width: 200px;
+    height: 42px;
+    color: #fff;
+    border: none;
+    margin: 20px auto 5px auto;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #1f2937;
+  }
+  a button:hover {
+    background-color: #374155;
+  }
+}
